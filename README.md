@@ -11,10 +11,10 @@ Things you may want to cover:
 
 * To start
 
-rails db:create
-rails db:migrate
-rails db:seed
-rails s -p 3001
+* rails db:create
+* rails db:migrate
+* rails db:seed
+* rails s -p 3001
 
 List all users with their sleep records:
 
