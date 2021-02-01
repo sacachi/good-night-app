@@ -16,6 +16,7 @@ rails db:create
 rails db:migrate
 
 rails db:seed
+
 rails s -p 3000
 
 List all users with their sleep records:
