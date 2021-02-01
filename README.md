@@ -5,20 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.7.1
 
-* System dependencies
+* System dependencies: postgresql, kaminari for paginate, jbuilder, rails 6 api
 
-* Configuration
+* To start
 
-* Database creation
+rails db:create
+rails db:migrate
+rails db:seed
+rails s -p 3001
 
-* Database initialization
+List all users with their sleep records:
 
-* How to run the test suite
+GET: http://localhost:3000/api/v1/users
 
-* Services (job queues, cache servers, search engines, etc.)
+List sleep records of an user
 
-* Deployment instructions
-
-* ...
+GET: http://localhost:3000/api/v1/users/1/sleep_trackers
