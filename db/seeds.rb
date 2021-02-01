@@ -35,12 +35,12 @@ User.all.each do |user|
   #sample id of current_user following
   follower_ids = user_ids_without_current_user.sample(5)
 
-  follower_ids.each do |i|
-    Relationship.create(following_id: user.id, followed_id: i)
+  follower_ids.each do |id|
+    Relationship.create(following_id: user.id, followed_id: id)
   end
 
-  following_ids.each do |i|
-    Relationship.create(following_id: i, followed_id: user.id)
+  following_ids.each do |id|
+    Relationship.create(following_id: id, followed_id: user.id)
   end
 end
 
