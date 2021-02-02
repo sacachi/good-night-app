@@ -23,6 +23,15 @@ List all users with their sleep records:
 
 GET: http://localhost:3000/api/v1/users
 
-List sleep records of an user
+POST	/api/v1/users/:id/follow
+    	params: followed_id
 
-GET: http://localhost:3000/api/v1/users/1/sleep_trackers
+POST	/api/v1/users/:id/unfollow
+    	params: followed_id
+
+POST	/api/v1/users/:id/track_sleep
+			params: user_id, sleep_time, waking_time
+
+GET   /api/v1/users/:id/following_users
+
+GET	  /api/v1/users/:id/followed_users
